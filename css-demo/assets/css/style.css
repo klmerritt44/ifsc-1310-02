@@ -1,6 +1,98 @@
 /* CSS Demo Project */
-/* Create color scheme */
 
+/* ---------box sizing--------- */
+
+html{
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+  /* --------global styles-------- */
 body{
     background-color: beige;
+    font-family: 'Lato', sans-serif;
+    margin:0;
 }
+
+header.primary{
+    background-color:#023859;
+    color:#ffffff;
+    text-align:center;
+    padding:30px;
+    text-shadow: 2px 2px 10px #000000
+}
+
+header.primary h1{
+    font-size: 5rem;
+    margin: 20px 0 10px;
+}
+
+header.primary h1 a {
+    color:#D8EBF2;
+    text-decoration:none;
+}
+
+header.primary h2{
+    font-size:1.4rem;
+}
+
+header.primary nav{
+    max-width:900px;
+    margin: 20px auto;
+}
+
+header.primary nav ul{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    padding:0;
+}
+
+header.primary nav ul li{
+    list-style-type:none;
+}
+/*list-style-type is to strip out the bullets*/
+
+header.primary nav a {
+    color:#fff;
+    text-decoration:none;
+    background-color:#000000;
+    background-color:rgba(0,0,0,.4);
+    padding:8px 16px;
+    border-radius:9px;
+}
+
+
+/*you can add longhand or shorhand for different padding values*/
+
+
+/* -----------Ocean color scheme------------ */ 
+
+/* Color Theme Swatches in Hex
+.ocean-1-hex { color: #023859; }
+.ocean-2-hex { color: #025373; }
+.ocean-3-hex { color: #50A0BF; }
+.ocean-4-hex { color: #96C6D9; }
+.ocean-5-hex { color: #D8EBF2; }
+*/
+
+/* Color Theme Swatches in RGBA
+.ocean-1-rgba { color: rgba(1, 55, 89, 1); }
+.ocean-2-rgba { color: rgba(2, 82, 114, 1); }
+.ocean-3-rgba { color: rgba(80, 159, 191, 1); }
+.ocean-4-rgba { color: rgba(149, 197, 216, 1); }
+.ocean-5-rgba { color: rgba(215, 234, 242, 1); }
+*/
+
+/* Color Theme Swatches in HSLA
+.ocean-1-hsla { color: hsla(202, 96, 17, 1); }
+.ocean-2-hsla { color: hsla(196, 96, 22, 1); }
+.ocean-3-hsla { color: hsla(196, 46, 53, 1); }
+.ocean-4-hsla { color: hsla(196, 46, 71, 1); }
+.ocean-5-hsla { color: hsla(196, 51, 89, 1); }
+*/
+

@@ -15,25 +15,29 @@
 </head>
 
 <body>
-  <header id="banner">
+  <header id="banner" class="primary">
+    <a href="#top"></a>
     <h1>Gordo's Story</h1>
     <nav class="primary">
-      <li><a href="gordo/index.html" title="home page">Home</a></li>
-      <li><a href=".../index.html" title="">About</a></li>
-      <li><a href="mailto:email@email.com" target="_blank" title="link opens in new window">UALR</a></li>
-      <li><a href="#contact-form">Contact</a></li>
+      <ul>
+        <li><a href="index.html" title="home page" role="button">Home</a></li>
+        <li><a href=".../index.html" title="about link" role="button">About</a></li>
+        <li><a href="mailto:email@email.com" target="_blank" title="link opens in new window" role="button">UALR</a></li>
+        <li><a href="#contact-form" role="button">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
   <main>
     <section id="intro">
-    <img src="assets/img/gordo.jpeg" alt="Little monkey Gordo posing in space suit with his helmet off looking to the side with an American flag in the background."/>
+    <img src="assets/img/gordo.jpeg" alt="Gordo posing in space suit with his helmet off looking to the side with an American flag in the background."/>
     <h2>Gordo: Old Reliable</h2>
 
     <p>Gordo was one of the first monkeys to make it into space as part of NASA's space program. Eight monkeys had flown on NASA missions before him, five of whom went by the name of Albert.</p>
 
     <p>Gordo's historic flight took place on December 13, 1958 when he took off from Cape Canaveral for a 15 minute flight into space. Even though he was weightless for over 8 minutes the on-board instruments indicated that Gordo enjoyed his journey into space. <em>Scientists monitoring the flight were pleased to note that the only slight side effect Gordo suffered from the entry into space was a modest slowing of his pulse.</em></p>
-    </section> <!--end of intro-->
+    </section> 
+    <!---------end of intro section---------->
 
     <section id="content">
       <h2>The Mission</h2>
@@ -41,13 +45,11 @@
       <p>The rocket carrying Gordo into space would take off from the Atlantic Missile Range at Cape Canaveral, travel further than any monkey had ever travelled before - over 1,500 miles - and reach a height of 310 miles (500 km) before returning to Earth and landing in the South Atlantic, 1,302 nautical miles south of Cape Canaveral.</p>
         
       <blockquote>"We all heard the rumors that they want to send a monkey up first. Well, none of us wants to think that they're gonna send a monkey up to do a man's work ... what they're trying to do to us is send a man up to do a monkey's work." <cite>Deke Slayton, Mercury Seven Astronaut</cite></blockquote>
-    </section>
     
-    <section id="content">
       <h3>The Jupiter AM-13</h3>
       <p>
         The Jupiter IRBM (Intermediate Range Ballistic Missile) was originally developed by the US Army as a long-range successor to its PGM-11 Redstone missile, but was eventually taken over and deployed by the USAF for political reasons. It was also the only one of the United States' early stategic ballistic missiles with some mobility.
-        </p>
+      </p>
       
       <ol>
         <li>Flight Date: December 13, 1958</li>
@@ -59,43 +61,42 @@
           <dd>A ballistic missile is a type of missile that uses projectile motion to deliver warheads on a target. These weapons are powered only during relatively brief periods—most of the flight is unpowered. 
           </dd>
       </dl>
-    </section>
 
     <table>
       <caption>Different species that were sent to space.</caption>
       <tr>
+        <th scope="col" colspan="5">horizontal heading</th>
+      </tr>
+      <tr>
         <th scope="col">Name</th>
         <th scope="col">Species</th>
         <th scope="col">Time in Space</th>
+        <th scope="col">Success?</th>
+        <th scope="col">Life lost?</th>
       </tr>
       <tr>
         <td>Fredrick</td>
         <td>squirrel</td>
         <td>45 min</td>
+        <td>fail</td>
+        <td>died</td>
       </tr>
       <tr>
         <td>Gilley</td>
         <td>ferret</td>
         <td>24 hrs.</td>
-      </tr>
-      <tr>
-        <td>Howie</td>
-        <td>weasel</td>
-        <td>3 hrs.</td>
-      </tr>
-      <tr>
-        <td>Cherrie</td>
-        <td>monkey</td>
-        <td>1 week</td>
+        <td>success</td>
+        <td>lived</td>
       </tr>
       <tr>
         <td>Alfredo</td>
         <td>rat</td>
-        <td>15 days</td>
+        <td>3 hrs.</td>
+        <td>success</td>
+        <td>died</td>
       </tr>
     </table>
     
-    <section id="content">
       <h4>The Journey</h4>
       <p>
         Gordo wore a specially customised space suit custom made for a monkey about one foot tall. The space suit was fitted with instruments, including temperature meters and microphones which recorded his historic suborbital journey, considered one of the outstanding achievements of space research.
@@ -105,8 +106,8 @@
       </p>
     </section>
     
-    <section id="references"> 
-      <h5 id="references">References</h5>
+    <section id="references" role="contentinfo"> 
+      <h5 class="references">References</h5>
       <ul>
         <li>Remembering 'Gordo'</li>
         <li>BBC - Monkey Lost After Space Flight</li>
@@ -116,10 +117,32 @@
   </main>
     
   <footer>
-    <p id="footer text">The Famous Primate Princess web site is a Web Standardistas production.
+    <section id="contact">
+      <form action="processing-script.php" method="post">
+        <fieldset>
+          <legend>Contact Us</legend>
+          <label for="fname">Full Name:</label>
+          <input type="text" id="fname" name="full-name" />
+        
+          <label for="email">Email:</label>
+          <textarea id="email" name="email"></textarea>
+          <input type="checkbox" id="sign-up" name="sign-up" value="Yes">
+          <label for="sign-up"> Want to Sign Up for Emails?</label>
+          <input type="submit" value="Submit" />
+        </fieldset>
+      </form>
+    </section>
+    <p id="footer-text">The Famous Primate Princess web site is a Web Standardistas production.
       XHTML + CSS released under a Creative Commons Attribution 3.0 license.
       Photography Copyright iStockphoto.</p>
-    <h6>&copy; 2023 Kristena Merritt | <a href="mailto:myemail@ualr.edu">Back to the Top</a> | <a href="#top">Back to the Top</a></h6>
+    <section id="social-media" title="Social Media Links">
+      <h6 class="social-media">Get social with Gordo!</h6>
+      <ul>
+        <li><a href="https://facebook.com/gordoland" title="facebook link">Like Gordo on Facebook</a></li>
+        <li><a href="https://instagram.com/gordo.monkey.boi" title="instagram link">Follow Gordo on Instagram</a></li>
+      </ul>
+    </section>
+    <h6 id="footer-header">&copy; 2023 Kristena Merritt | <a href="mailto:myemail@ualr.edu">myemail@ualr.edu</a> | <a href="#top">Back to the Top</a></h6>
   </footer>
     
 </body>
