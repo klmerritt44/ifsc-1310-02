@@ -30,7 +30,7 @@ img {
   /* --------global styles-------- */
 body{
     background-color: beige;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     margin:0;
 }
 
@@ -106,6 +106,8 @@ border-bottom: 1px dotted;   #c0c0c0;
     flex-direction:row;
     justify-content:space-between;
     gap:20px;
+    border-bottom: 1px dotted #c0c0c0;
+    padding-bottom:2.6rem;
 }
 
 #content article.post:hover {
@@ -120,6 +122,63 @@ article.post figure {
     margin:0;
 }
 
+time.post-date, figcaption, .post-meta{
+    text-transform:uppercase;
+    color: #50A0BF;
+}
+
+article .post img {
+    border:solid 1px #50A0BF;
+    padding:5px;
+    border-radius:5px;
+}
+
+article .post a {
+    color: #50A0BF
+}
+
+article .post a hover{
+    text-decoration: none;
+}
+
+
+aside[role="complementary"]{ /*---attribute selector ex---*/
+    background-color: #172635;
+    color:#fff;
+    padding:40px;
+}
+
+aside .container{
+    display:flex;
+    flex-direction:row;
+    gap:40px;
+}
+
+aside .container p {
+    line-height:1;
+}
+
+aside .container p a:last-of-type{
+    color: #fff;
+    display:block;
+    text-align:right;
+    margin-top:20px;
+}
+
+aside .container .widget footer{
+    display:none:
+
+}
+
+#colophone {
+    background-color:#50A0BF
+}
+
+#colophone h6 {
+    padding:20px;
+    margin:0;
+    text-aligh:center;
+}
 
 
 
@@ -139,7 +198,19 @@ article.post figure {
     header.primary nav ul a{
         display:block;
     }
+#content {
+    flex-direction:column;
+}
 
+#content img {
+    display:block;
+    margin:auto;
+}
+
+aside .container {
+    flex-direction:column;
+    
+}
 
 }
 
