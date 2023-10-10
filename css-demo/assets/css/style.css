@@ -29,7 +29,7 @@ img {
 
   /* --------global styles-------- */
 body{
-    background-color: beige;
+    background-color: #DAFDBA;
     font-family: 'Quicksand', sans-serif;
     margin:0;
 }
@@ -43,9 +43,10 @@ header.primary{
 }
 
 header.primary h1{
-    font-size: 5rem;
+    font-size: 4.8rem;
     margin: 20px 0 10px;
 }
+/*you can add longhand or shorhand for different padding values*/
 
 header.primary h1 a {
     color:#D8EBF2;
@@ -53,7 +54,8 @@ header.primary h1 a {
 }
 
 header.primary h2{
-    font-size:1.4rem;
+    font-size: 1.7rem;
+    margin-bottom: 60px;
 }
 
 header.primary nav{
@@ -75,30 +77,33 @@ header.primary nav ul li{
 
 header.primary nav a {
     color:#fff;
+    font-size: 1rem;
     text-decoration:none;
     background-color:#000000;
     background-color:rgba(0,0,0,.4);
     padding:8px 16px;
     border-radius:9px;
-    transition: .5s;
+    transition: .4s;
+    border: 1px solid #DAFDBA;
 }
 
 header.primary nav a:hover,
 header.primary nav a:active
 {
-    background-color:rgba(0,0,0,9);
+    background-color:rgba(0,0,0,.9);
 }
 
 
 #intro{
-    border-bottom: 1px solid #c0c0c0;
+    border-bottom: 1px dotted #c0c0c0;
     padding-bottom:20px;
 }
 
 #intro h2{
-
-color:
-border-bottom: 1px dotted;   #c0c0c0;
+color: #012030
+border-bottom: 1px solid;
+font-size: 1.8rem;
+rem;
 }
 
 #content {
@@ -110,6 +115,13 @@ border-bottom: 1px dotted;   #c0c0c0;
     padding-bottom:2.6rem;
 }
 
+#content article.post{
+    box-shadow: 0 4px 8px rgba(0,0,0,.4);
+    padding:10px;
+    font-size:.8rem;
+    transition:.5s; 
+  }
+
 #content article.post:hover {
     box-shadow: 0 12px 8px rgba(0,0,0,.4);
     padding:10px;
@@ -117,36 +129,43 @@ border-bottom: 1px dotted;   #c0c0c0;
     transition: .5s;
 }
 
-
 article.post figure {
     margin:0;
 }
 
 time.post-date, figcaption, .post-meta{
     text-transform:uppercase;
-    color: #50A0BF;
+    color: #20627d;
+    font-size: .8rem;
 }
 
-article .post img {
+article.post img {
     border:solid 1px #50A0BF;
     padding:5px;
-    border-radius:5px;
+    border-radius:2px;
 }
 
-article .post a {
-    color: #50A0BF
+article.post a {
+    color: #50A0BF;
+    transition:.5s;
 }
 
-article .post a hover{
+article.post a:hover{
     text-decoration: none;
 }
 
+/* Attribute Selector Example
+a[target="_blank"]{
+  color:red;
+}
+*/
 
 aside[role="complementary"]{ /*---attribute selector ex---*/
-    background-color: #172635;
+    background-color: #012030;
     color:#fff;
     padding:40px;
 }
+
 
 aside .container{
     display:flex;
@@ -155,7 +174,7 @@ aside .container{
 }
 
 aside .container p {
-    line-height:1;
+    line-height: 1.8;
 }
 
 aside .container p a:last-of-type{
@@ -166,19 +185,27 @@ aside .container p a:last-of-type{
 }
 
 aside .container .widget footer{
-    display:none:
-
+    display:none;
 }
 
-#colophone {
-    background-color:#50A0BF
+#colophon {
+    background:#50A0BF;
 }
 
-#colophone h6 {
+#colophon h6 {
     padding:20px;
     margin:0;
-    text-aligh:center;
+    text-align:center;
 }
+
+
+
+
+
+
+
+
+
 
 
 
@@ -218,20 +245,52 @@ aside .container {
 
 
 
-/* We used background color to make the button partially trasnparent. rgba A stands for alpha*/
 
 
-/*you can add longhand or shorhand for different padding values*/
+
+/* We used background color to make the button partially transparent. rgba A stands for alpha*/
+
+
+
+
+
+/* ---------------Poseidon Color Theme--------------------- */
+
+/* Color Theme Swatches in Hex 
+.Poseidon-1-hex { color: #012030; } Navy
+.Poseidon-2-hex { color: #13678A; } 
+.Poseidon-3-hex { color: #45C4B0; } mild teal
+.Poseidon-4-hex { color: #9AEBA3; } light green
+.Poseidon-5-hex { color: #DAFDBA; } light yellow green color pop
+*/
+
+/* Color Theme Swatches in RGBA
+.Poseidon-1-rgba { color: rgba(0, 32, 48, 1); }
+.Poseidon-2-rgba { color: rgba(18, 103, 138, 1); }
+.Poseidon-3-rgba { color: rgba(68, 196, 175, 1); }
+.Poseidon-4-rgba { color: rgba(153, 234, 162, 1); }
+.Poseidon-5-rgba { color: rgba(217, 252, 186, 1); }
+ */
+
+/* Color Theme Swatches in HSLA
+.Poseidon-1-hsla { color: hsla(200, 96, 9, 1); }
+.Poseidon-2-hsla { color: hsla(197, 76, 30, 1); }
+.Poseidon-3-hsla { color: hsla(170, 52, 52, 1); }
+.Poseidon-4-hsla { color: hsla(126, 66, 76, 1); }
+.Poseidon-5-hsla { color: hsla(91, 94, 86, 1); }
+*/
+
 
 
 /* -----------Ocean color scheme------------ */ 
 
 /* Color Theme Swatches in Hex
-.ocean-1-hex { color: #023859; }
+.ocean-1-hex { color: #023859; } darkest blue
 .ocean-2-hex { color: #025373; }
 .ocean-3-hex { color: #50A0BF; }
 .ocean-4-hex { color: #96C6D9; }
-.ocean-5-hex { color: #D8EBF2; }
+.ocean-5-hex { color: #D8EBF2; } lightest blue
+.ocean-color-pop { color: #DDFFBD; } green accent
 */
 
 /* Color Theme Swatches in RGBA
@@ -249,4 +308,33 @@ aside .container {
 .ocean-4-hsla { color: hsla(196, 46, 71, 1); }
 .ocean-5-hsla { color: hsla(196, 51, 89, 1); }
 */
+
+/* -----------Sunset color scheme------------ */ 
+
+/* Color Theme Swatches in Hex
+.Beautiful-sunset-over-Lake-Superior-with-a-sail-boat-1-hex { color: #F2B6D7; }
+.Beautiful-sunset-over-Lake-Superior-with-a-sail-boat-2-hex { color: #2C7BBF; }
+.Beautiful-sunset-over-Lake-Superior-with-a-sail-boat-3-hex { color: #F2C288; }
+.Beautiful-sunset-over-Lake-Superior-with-a-sail-boat-4-hex { color: #F29F80; }
+.Beautiful-sunset-over-Lake-Superior-with-a-sail-boat-5-hex { color: #F27D72; }
+.Its-Always-Sunny-on-My-SIde-1-hex { color: #FF2151; } HOT pink
+*/
+
+/* Color Theme Swatches in RGBA 
+.Beautiful-sunset-over-Lake-Superior-with-a-sail-boat-1-rgba { color: rgba(242, 181, 214, 1); }
+.Beautiful-sunset-over-Lake-Superior-with-a-sail-boat-2-rgba { color: rgba(43, 122, 191, 1); }
+.Beautiful-sunset-over-Lake-Superior-with-a-sail-boat-3-rgba { color: rgba(242, 194, 135, 1); }
+.Beautiful-sunset-over-Lake-Superior-with-a-sail-boat-4-rgba { color: rgba(242, 158, 128, 1); }
+.Beautiful-sunset-over-Lake-Superior-with-a-sail-boat-5-rgba { color: rgba(242, 124, 113, 1); }
+.Its-Always-Sunny-on-My-SIde-1-rgba { color: rgba(255, 33, 81, 1); }
+*/
+
+/* Color Theme Swatches in HSLA
+.Beautiful-sunset-over-Lake-Superior-with-a-sail-boat-1-hsla { color: hsla(326, 70, 83, 1); }
+.Beautiful-sunset-over-Lake-Superior-with-a-sail-boat-2-hsla { color: hsla(208, 62, 46, 1); }
+.Beautiful-sunset-over-Lake-Superior-with-a-sail-boat-3-hsla { color: hsla(33, 80, 74, 1); }
+.Beautiful-sunset-over-Lake-Superior-with-a-sail-boat-4-hsla { color: hsla(16, 81, 72, 1); }
+.Beautiful-sunset-over-Lake-Superior-with-a-sail-boat-5-hsla { color: hsla(5, 83, 69, 1); }
+.Its-Always-Sunny-on-My-SIde-1-hsla { color: hsla(0, 100, 56, 1); }
+ */
 
