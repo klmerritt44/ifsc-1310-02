@@ -100,10 +100,9 @@ header.primary nav a:active
 }
 
 #intro h2{
-color: #012030
+color: #012030;
 border-bottom: 1px solid;
 font-size: 1.8rem;
-rem;
 }
 
 #content {
@@ -217,7 +216,7 @@ aside .container .widget footer{
 
     header.primary nav ul{
         flex-direction:column;
-        max: width 250px;
+        max-width: 250px;
         margin:auto;
         gap: 10px;
     }
@@ -225,6 +224,7 @@ aside .container .widget footer{
     header.primary nav ul a{
         display:block;
     }
+    
 #content {
     flex-direction:column;
 }
