@@ -50,7 +50,7 @@ img {
 
   /* --------global styles-------- */
 body{
-    background-color: #DAFDBA;
+    background-color: #fff;
     font-family: 'Quicksand', sans-serif;
     margin:0;
 }
@@ -64,7 +64,7 @@ header.primary{
 }
 
 header.primary h1{
-    font-size: 4.8rem;
+    font-size: 4.5rem;
     margin: 20px 0 10px;
 }
 /*you can add longhand or shorhand for different padding values*/
@@ -159,6 +159,7 @@ time.post-date, figcaption, .post-meta{
     font-size: .8rem;
 }
 
+
 article.post img {
     border:solid 1px #50A0BF;
     padding:5px;
@@ -218,12 +219,12 @@ table th {
 }
 
 table tr:nth-child(even) {
-    background-color: rgba(0,0,0,.4);
+    background-color: rgba(0,0,0,.2);
 }
 
 table td {
-    border: 1px solid #50A0BF;
-    padding: 5px;
+    border: 1px solid #023859;
+    padding: 6px;
 }
 
 table caption {
@@ -232,17 +233,15 @@ table caption {
     /* visibility: hidden; is what you can use to remove the caption but still have the space.*/
 }
 
-table tr:hover{
-    background-color: rgba(0,0,0,.5);
+table tr:hover {
+    background-color: rgba(0,0,0,.4);
 }
 
 td:nth-child(n+2) {
     text-align: right;
 }
 
-dl {
-
-}
+dl {}
 
 dt {
     font-weight:bold;
@@ -293,7 +292,7 @@ aside .container .widget footer{
 }
 
 #colophon {
-    background:#50A0BF;
+    background:#DAFDBA;
 }
 
 #colophon h6 {
