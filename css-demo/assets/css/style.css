@@ -104,16 +104,16 @@ header.primary nav{
 }
 
 header.primary nav ul{
-    display:flex;
-    flex-direction:row;
-    justify-content:space-evenly;
-    padding:0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0;
 }
 
 header.primary nav ul li{
     list-style-type:none;
 }
-/*list-style-type is to strip out the bullets*/
+/*list-style-type with value none is to strip out the bullets*/
 
 header.primary nav a {
     color:#fff;
@@ -162,7 +162,7 @@ header.primary nav a:active
     box-shadow: 0 12px 8px rgba(0,0,0,.4);
     padding:10px;
     transition: .5s;
-    background-color: #fbfbfbe6
+    background-color: #fbfbfbe9
 }
 
 article.post figure {
@@ -175,11 +175,9 @@ time.post-date, figcaption, .post-meta{
     font-size: .8rem;
 }
 
-
 article.post img {
     border:solid 1px #50A0BF;
-    padding:5px;
-    justify-content: center;
+    padding:5px 10px;
     border-radius:2px;
 }
 
@@ -215,7 +213,14 @@ a[target="_blank"]{
     border-left:5px solid #20627d;
     padding-left: 10px;
     font-size: 1.4rem;
+    color: #012030;
+    margin-top: 40px;
 }
+
+#practice .blockquote-wrapper {
+    display: flex;
+    padding: 0 20px;
+ }
 
 #practice blockquote {
     background-color: #012030;
@@ -223,13 +228,21 @@ a[target="_blank"]{
     position: relative;
     padding: 30px;
     width: 100%;
-    margin: 80px auto;
     align-self: center;
-    border-top: solid 1px;
-    border-bottom: solid 1px;
+    border-top: solid 1px #DAFDBA;
+    border-bottom: solid 1px #DAFDBA;
     background-image: linear-gradient(180deg, #023859 25%, #13678A 100%);
     font-size: 2rem;
-    margin: 20px 0 10px;
+}
+
+#practice blockquote:after {
+    position: absolute;
+    content: "”";
+    color: rgba(255, 255, 255, 1);
+    font-size: 10rem;
+    line-height: 0;
+    bottom: -5px;
+    right: 30px;
 }
 
 #practice cite {
@@ -237,6 +250,11 @@ a[target="_blank"]{
     text-align: left;
     font-size: .7rem;
     margin-top: 6px;
+}
+
+#practice h4 {
+    font-size: 1.2rem;
+    color: #012030;
 }
 
 table {
@@ -393,14 +411,20 @@ aside .container {
 
 
 
+/*----stuff to work on------*/
 
+/* article images not centered.
+too much space adove h2s....
+how do I get the lines to show underneath the quote in the gradient box https://codepen.io/jupago/pen/dwZKbM
+why is it not responsive? Is it?
+add a home icon
+hamburger menu?
+should the nav buttons be html button tags?
+*/
 
 
 
 /* We used background color to make the button partially transparent. rgba A stands for alpha*/
-
-
-
 
 
 /* ---------------Poseidon Color Theme--------------------- */
