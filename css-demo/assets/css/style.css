@@ -23,7 +23,7 @@ img {
     background-color: #fff;
     font-family: 'Quicksand', sans-serif;
     margin:0;
-    background-image: url("https://thomaswallace.net/wp-content/uploads/2018/02/ualr.png");
+    background-image: url("../img/greenery.jpg");
     background-repeat: repeat;
     background-size: contain;
 }
@@ -63,7 +63,6 @@ body{
     font-family: 'Quicksand', sans-serif;
     font-size: 1rem;
     margin:0;
-    background-image: url("../img/greenery.jpg");
     line-height: 1.8;
 }
 
@@ -127,6 +126,9 @@ header.primary nav a {
     border: 1px solid #DAFDBA;
 }
 
+/* We used background color to make the button partially transparent. rgba A stands for alpha*/
+
+
 header.primary nav a:hover,
 header.primary nav a:active
 {
@@ -162,7 +164,7 @@ header.primary nav a:active
     box-shadow: 0 12px 8px rgba(0,0,0,.4);
     padding:10px;
     transition: .5s;
-    background-color: #fbfbfbe9
+    background-color: #fbfbfbea
 }
 
 article.post figure {
@@ -219,36 +221,52 @@ a[target="_blank"]{
 
 #practice .blockquote-wrapper {
     display: flex;
-    padding: 0 20px;
+    padding: 90px;
+    margin: 40px;
+    background-image: url("../img/blue-flower-pollinators.jpg");
  }
 
 #practice blockquote {
     background-color: #012030;
     color: #fff;
     position: relative;
-    padding: 30px;
+    padding: 80px;
     width: 100%;
     align-self: center;
-    border-top: solid 1px #DAFDBA;
-    border-bottom: solid 1px #DAFDBA;
     background-image: linear-gradient(180deg, #023859 25%, #13678A 100%);
     font-size: 2rem;
+}
+
+ /*copied some of this from  https://codepen.io/jupago/pen/dwZKbM 
+ I removed the z-index bc not totallly sure what it does yet.
+ why did they use background-image prop? The color block is not an image?*/
+
+#practice blockquote:before {
+    position: absolute;
+    content: "“";
+    font: quicksand;
+    color: rgba(255, 255, 255, 1);
+    font-size: 13rem;
+    line-height: 0;
+    top: 90px;
+    left: 30px;
 }
 
 #practice blockquote:after {
     position: absolute;
     content: "”";
+    font: quicksand;
     color: rgba(255, 255, 255, 1);
-    font-size: 10rem;
+    font-size: 13rem;
     line-height: 0;
-    bottom: -5px;
+    bottom: 10px;
     right: 30px;
 }
 
 #practice cite {
     display: block;
     text-align: left;
-    font-size: .7rem;
+    font-size: 1rem;
     margin-top: 6px;
 }
 
@@ -414,17 +432,14 @@ aside .container {
 /*----stuff to work on------*/
 
 /* article images not centered.
-too much space adove h2s....
-how do I get the lines to show underneath the quote in the gradient box https://codepen.io/jupago/pen/dwZKbM
-why is it not responsive? Is it?
+too much space above global h2s....
+What does my blockquote look like on mobile...
+it doesn't appear my multiple column layouts are stacking...
+get more familiar with margins and how my "block quot:before" absolute positioned quotes work
 add a home icon
 add hamburger menu
 should the nav buttons be html button tags?
 */
-
-
-
-/* We used background color to make the button partially transparent. rgba A stands for alpha*/
 
 
 /* ---------------Poseidon Color Theme--------------------- */
