@@ -24,7 +24,7 @@ img {
     font-family: 'Quicksand', sans-serif;
     margin:0;
     background-image: url("https://thomaswallace.net/wp-content/uploads/2018/02/ualr.png");
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: contain;
 }
 
@@ -33,7 +33,6 @@ img {
 .container{
     width:80vw;
     margin:40px auto;
-
 }
 
 .img-right{
@@ -62,18 +61,24 @@ img {
 body{
     background-color: #fff;
     font-family: 'Quicksand', sans-serif;
+    font-size: 1rem;
     margin:0;
     background-image: url("../img/greenery.jpg");
+    line-height: 1.8;
+}
+
+h2 {
+    color: #012030;
+    font-size: 1.9rem;
 }
 
 header.primary{
-    background-color:#023859;
     color:#ffffff;
     text-align:center;
     padding:30px;
     text-shadow: 2px 2px 10px #000000;
-    background-color: #DFDBE5;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.2' fill-rule='nonzero'%3E%3Cpath d='M29 58.58l7.38-7.39A30.95 30.95 0 0 1 29 37.84a30.95 30.95 0 0 1-7.38 13.36l7.37 7.38zm1.4 1.41l.01.01h-2.84l-7.37-7.38A30.95 30.95 0 0 1 6.84 60H0v-1.02a28.9 28.9 0 0 0 18.79-7.78L0 32.41v-4.84L18.78 8.79A28.9 28.9 0 0 0 0 1.02V0h6.84a30.95 30.95 0 0 1 13.35 7.38L27.57 0h2.84l7.39 7.38A30.95 30.95 0 0 1 51.16 0H60v27.58-.01V60h-8.84a30.95 30.95 0 0 1-13.37-7.4L30.4 60zM29 1.41l-7.4 7.38A30.95 30.95 0 0 1 29 22.16 30.95 30.95 0 0 1 36.38 8.8L29 1.4zM58 1A28.9 28.9 0 0 0 39.2 8.8L58 27.58V1.02zm-20.2 9.2A28.9 28.9 0 0 0 30.02 29h26.56L37.8 10.21zM30.02 31a28.9 28.9 0 0 0 7.77 18.79l18.79-18.79H30.02zm9.18 20.2A28.9 28.9 0 0 0 58 59V32.4L39.2 51.19zm-19-1.4a28.9 28.9 0 0 0 7.78-18.8H1.41l18.8 18.8zm7.78-20.8A28.9 28.9 0 0 0 20.2 10.2L1.41 29h26.57z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-color:#012030;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'%3E%3Cg fill='%239C92AC' fill-opacity='0.16'%3E%3Cpath d='M12 0h18v6h6v6h6v18h-6v6h-6v6H12v-6H6v-6H0V12h6V6h6V0zm12 6h-6v6h-6v6H6v6h6v6h6v6h6v-6h6v-6h6v-6h-6v-6h-6V6zm-6 12h6v6h-6v-6zm24 24h6v6h-6v-6z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
 }
 
 header.primary h1{
@@ -90,6 +95,7 @@ header.primary h1 a {
 header.primary h2{
     font-size: 1.7rem;
     margin-bottom: 60px;
+    color: #D8EBF2;
 }
 
 header.primary nav{
@@ -129,37 +135,34 @@ header.primary nav a:active
 
 
 #intro{
-    border-bottom: 1px dotted #c0c0c0;
     padding-bottom:20px;
+    background-color: #fff;
+    padding: 40px;
 }
 
-#intro h2{
-color: #012030;
-border-bottom: 1px solid;
-font-size: 1.8rem;
-}
 
 #content {
     display:flex;
     flex-direction:row;
     justify-content:space-between;
     gap:20px;
-    border-bottom: 1px dotted #c0c0c0;
+    border-bottom: 1px solid #023859;
     padding-bottom:2.6rem;
 }
 
 #content article.post{
-    box-shadow: 0 4px 8px rgba(0,0,0,.4);
+    box-shadow: 4px 4px 15px rgb(40, 117, 104);    
     padding:10px;
-    font-size:.8rem;
-    transition:.5s; 
+    font-size: 1.1rem;
+    transition:.5s;
+    background-color: #fbfbfbad;
   }
 
 #content article.post:hover {
     box-shadow: 0 12px 8px rgba(0,0,0,.4);
     padding:10px;
-    font-size:.8rem;
     transition: .5s;
+    background-color: #fbfbfbe6
 }
 
 article.post figure {
@@ -176,11 +179,12 @@ time.post-date, figcaption, .post-meta{
 article.post img {
     border:solid 1px #50A0BF;
     padding:5px;
+    justify-content: center;
     border-radius:2px;
 }
 
 article.post a {
-    color: #50A0BF;
+    color: #023859;
     transition:.5s;
 }
 
@@ -194,15 +198,9 @@ a[target="_blank"]{
 }
 */
 
-#practice h2 {
-    border: 1px solid #20627d;
-    box-shadow: 4px 4px 15px rgba(68, 196, 175, 1);
-    color: #012030;
-    padding-left: 10px;
-}
-
 #practice {
-    line-height:1.9;
+    background-color: #fff;
+    padding: 40px;
 }
 
 #practice a {
@@ -216,21 +214,29 @@ a[target="_blank"]{
 #practice h3{
     border-left:5px solid #20627d;
     padding-left: 10px;
+    font-size: 1.4rem;
 }
 
 #practice blockquote {
-    border: 1px solid #50A0BF;
-    padding: 10px 20px;
-    margin: 4px;
     background-color: #012030;
     color: #fff;
-    text-shadow: 1px, 2px, #000000;
+    position: relative;
+    padding: 30px;
+    width: 100%;
+    margin: 80px auto;
+    align-self: center;
+    border-top: solid 1px;
+    border-bottom: solid 1px;
+    background-image: linear-gradient(180deg, #023859 25%, #13678A 100%);
+    font-size: 2rem;
+    margin: 20px 0 10px;
 }
 
 #practice cite {
     display: block;
-    font-size: .5rem;
-    text-align: right;
+    text-align: left;
+    font-size: .7rem;
+    margin-top: 6px;
 }
 
 table {
@@ -299,14 +305,23 @@ aside[role="complementary"]{ /*---another attribute selector ex---*/
 }
 
 aside .container{
-    display:flex;
+    display: flex;
     flex-direction:row;
     gap:40px;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.2' fill-rule='nonzero'%3E%3Cpath d='M29 58.58l7.38-7.39A30.95 30.95 0 0 1 29 37.84a30.95 30.95 0 0 1-7.38 13.36l7.37 7.38zm1.4 1.41l.01.01h-2.84l-7.37-7.38A30.95 30.95 0 0 1 6.84 60H0v-1.02a28.9 28.9 0 0 0 18.79-7.78L0 32.41v-4.84L18.78 8.79A28.9 28.9 0 0 0 0 1.02V0h6.84a30.95 30.95 0 0 1 13.35 7.38L27.57 0h2.84l7.39 7.38A30.95 30.95 0 0 1 51.16 0H60v27.58-.01V60h-8.84a30.95 30.95 0 0 1-13.37-7.4L30.4 60zM29 1.41l-7.4 7.38A30.95 30.95 0 0 1 29 22.16 30.95 30.95 0 0 1 36.38 8.8L29 1.4zM58 1A28.9 28.9 0 0 0 39.2 8.8L58 27.58V1.02zm-20.2 9.2A28.9 28.9 0 0 0 30.02 29h26.56L37.8 10.21zM30.02 31a28.9 28.9 0 0 0 7.77 18.79l18.79-18.79H30.02zm9.18 20.2A28.9 28.9 0 0 0 58 59V32.4L39.2 51.19zm-19-1.4a28.9 28.9 0 0 0 7.78-18.8H1.41l18.8 18.8zm7.78-20.8A28.9 28.9 0 0 0 20.2 10.2L1.41 29h26.57z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+aside article.widget {
+    background-color: #012030;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.07' fill-rule='nonzero'%3E%3Cpath d='M29 58.58l7.38-7.39A30.95 30.95 0 0 1 29 37.84a30.95 30.95 0 0 1-7.38 13.36l7.37 7.38zm1.4 1.41l.01.01h-2.84l-7.37-7.38A30.95 30.95 0 0 1 6.84 60H0v-1.02a28.9 28.9 0 0 0 18.79-7.78L0 32.41v-4.84L18.78 8.79A28.9 28.9 0 0 0 0 1.02V0h6.84a30.95 30.95 0 0 1 13.35 7.38L27.57 0h2.84l7.39 7.38A30.95 30.95 0 0 1 51.16 0H60v27.58-.01V60h-8.84a30.95 30.95 0 0 1-13.37-7.4L30.4 60zM29 1.41l-7.4 7.38A30.95 30.95 0 0 1 29 22.16 30.95 30.95 0 0 1 36.38 8.8L29 1.4zM58 1A28.9 28.9 0 0 0 39.2 8.8L58 27.58V1.02zm-20.2 9.2A28.9 28.9 0 0 0 30.02 29h26.56L37.8 10.21zM30.02 31a28.9 28.9 0 0 0 7.77 18.79l18.79-18.79H30.02zm9.18 20.2A28.9 28.9 0 0 0 58 59V32.4L39.2 51.19zm-19-1.4a28.9 28.9 0 0 0 7.78-18.8H1.41l18.8 18.8zm7.78-20.8A28.9 28.9 0 0 0 20.2 10.2L1.41 29h26.57z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    padding: 40px;
+}
+
+aside .container h2 {
+    color:#fff
 }
 
 aside .container p {
-    line-height: 1.8;
+    line-height: 2;
 }
 
 aside .container p a:last-of-type{
@@ -321,7 +336,8 @@ aside .container .widget footer{
 }
 
 #colophon {
-    background:#DAFDBA;
+    background: #13678A;
+    
 }
 
 #colophon h6 {
@@ -394,7 +410,7 @@ aside .container {
 .Poseidon-2-hex { color: #13678A; } 
 .Poseidon-3-hex { color: #45C4B0; } mild teal
 .Poseidon-4-hex { color: #9AEBA3; } light green
-.Poseidon-5-hex { color: #DAFDBA; } light yellow green color pop
+.Poseidon-5-hex { color: #DAFDBA; } light yellow green color pop 
 */
 
 /* Color Theme Swatches in RGBA
