@@ -1,115 +1,93 @@
-<section id="practice">
-    <h2>Properly Marking up an HTML Document</h2>
-    <!--(Primary Content Heading)-->
-  
-    <p>This is a paragraph. <em>Often times designers</em> will use <q>Dummy Text</q> as a <strong>placeholder</strong> in a document. An example of that text follows...Lorem ipsum dolor sit amet, consectetuer <del>adipiscing elit</del>. Praesent volutpat
-      velit sed massa. In volutpat eros sagittis ipsum. Donec fringilla risus nec nunc. Fusce tellus arcu, blandit quis, posuere in, porta vitae, lorem.</p>
-  
-    <p> <a href="#">Quisque feugiat arcu eget sapien</a>. <span class="foo">Aenean</span> eget ipsum id arcu bibendum porttitor. Vivamus id lectus non eros eleifend aliquet.</p>
-    <p> <img src="https://thomaswallace.net/wp-content/uploads/2018/02/ualr.png" alt="UA Little Rock Logo" />Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris volutpat. Integer dignissim consequat enim. Praesent velit felis,
-      tempus malesuada, sagittis et, condimentum in, ante. Nulla lobortis, ligula sit amet laoreet sollicitudin, sem arcu lacinia tellus, id lobortis arcu urna tincidunt turpis. <sup><a href="#">1</a></sup> </p>
-  
-    <h3>This is a Subsection of the Primary Content</h3>
-    <!-- (Subsection I)-->
-  
-    <table>
-      <caption>Grocery List</caption>
-      <thead>
-        <!--Design Time Attribute - Remove before Prodution-->
-        <tr>
-          <th scope="col">Item</th>
-          <th scope="col">Quantity</th>
-          <th scope="col">Cost</th>
-        </tr>
-      </thead>
-      <tr>
-        <td>Jolt Extra</td>
-        <td>3</td>
-        <td>.99</td>
-      </tr>
-      <tr>
-        <td>Jolt</td>
-        <td>3</td>
-        <td>.99</td>
-      </tr>
-      <tr>
-        <td>Jolt</td>
-        <td>3</td>
-        <td>.99</td>
-      </tr>
-      <tr>
-        <td>Jolt</td>
-        <td>3</td>
-        <td>.99</td>
-      </tr>
-      <tr>
-        <td>Jolt</td>
-        <td>3</td>
-        <td>.99</td>
-      </tr>
-      <tr>
-        <td>Jolt</td>
-        <td>3</td>
-        <td>.99</td>
-      </tr>
-    </table>
-  
-    <p>This is a paragraph. Often times designers will use "Dummy Text" as a placeholder in a document. An example of that text follows...Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent volutpat velit sed massa. In volutpat eros sagittis
-      ipsum. Donec fringilla risus nec nunc. Fusce tellus arcu, blandit quis, posuere in, porta vitae, lorem. Quisque feugiat arcu eget sapien. Aenean eget ipsum id arcu bibendum porttitor. Vivamus id lectus non eros eleifend aliquet. Cum sociis natoque
-      penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris volutpat. Integer dignissim consequat enim. Praesent velit felis, tempus malesuada, sagittis et, condimentum in, ante. Nulla lobortis, ligula sit amet laoreet sollicitudin,
-      sem arcu lacinia tellus, id lobortis arcu urna tincidunt turpis.</p>
-  
-    <!--This is a list of instructions.-->
-  
-    <ol>
-      <li>Instruction</li>
-      <li>Instruction</li>
-      <li>Instruction</li>
-      <li>Instruction</li>
-      <li>Instruction</li>
-      <li>Instruction</li>
-    </ol>
-  
-    <!--This is a list of items to purchase at the grocery store.-->
-  
-    <ul>
-      <li>Ramen</li>
-      <li>Cheetos
-        <ul>
-          <li>Ramen</li>
-          <li>Cheetos</li>
-          <li>Jolt</li>
-          <li>Bread</li>
-        </ul>
-      </li>
-      <li>Jolt</li>
-      <li>Bread</li>
-    </ul>
-  
-    <!--This is an Example of how we should mark up a term and its description(s)-->
-    <dl>
-      <dt>Term</dt>
-      <dd>Description 1</dd>
-      <dd>Description 2</dd>
-      <dt>Term</dt>
-      <dd>Description 1</dd>
-      <dd>Description 2</dd>
-      <dd>Description 3</dd>
-      <dd>Description 4</dd>
-      <dt>Term</dt>
-      <dd>Description 1</dd>
-    </dl>
-  
-    <h4>This is a Subsection of Subsection I</h4>
-  
-    <blockquote>This is a Quote. Content precedes design. Design in the absence of content is not design, it's decoration. <cite>From Designing with Web Standards by Jeffery Zeldman.</cite></blockquote>
-  
-    <h3>This is a Subsection of the Primary Content</h3>
-    <!--(Subsection II)-->
-  
-    <p>This is a paragraph. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent volutpat velit sed massa. In volutpat eros sagittis ipsum. Donec fringilla risus nec nunc. Fusce tellus arcu, blandit quis, posuere in, porta vitae, lorem. Quisque
-      feugiat arcu eget sapien. Aenean eget ipsum id arcu bibendum porttitor. Vivamus id lectus non eros eleifend aliquet. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris volutpat. Integer dignissim consequat
-      enim. Praesent velit felis, tempus malesuada, sagittis et, condimentum in, ante. Nulla lobortis, ligula sit amet laoreet sollicitudin, sem arcu lacinia tellus, id lobortis arcu urna tincidunt turpis. Proin adipiscing ultrices dui. Duis porttitor,
-      libero ut eleifend pellentesque, risus turpis fermentum est, vel nonummy lorem est id nisl. Nulla facilisi. In sagittis tortor. Vestibulum dictum leo vitae augue. Morbi in odio sed nulla luctus sodales.</p>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Positioning Lab</title>
+  <style type="text/css">
+    /* ---------------Box Sizing----------------- */
+    html {
+      box-sizing: border-box;
+    }
+    *,
+    *:before,
+    *:after {
+      box-sizing: inherit;
+    }
+    body {
+      background-color: #ECECEC;
+      font-weight: bold;
+      font-family: Tahoma, Geneva, sans-serif;
+      color: #FFF;
+      text-align: center;
+      line-height: 24px;
+    }
+
+    #wrapper {
+      background-color: #FFF;
+      border: 1px solid #c0c0c0;
+      width: 800px;
+      margin-right: auto;
+      margin-left: auto;
+      text-shadow: 2px 2px #000;
+      justify-content: space-around;
+    }
+
+    #navy {
+      background-color: #001f3f;
+      width: 300px;
+      height: 125px;
+      float: left;
+      margin: 30px;
+    }
+
+    #teal {
+      background-color: #39CCCC;
+      width: 300px;
+      height: 125px;
+      float: left;
+      margin: 30px;
+    }
+
+    #blue {
+      background-color: #0074D9;
+      width: 300px;
+      height: 125px;
+      float: left;
+      margin: 30px;
+    }
+
+    #aqua {
+      background-color: #7FDBFF;
+      width: 300px;
+      height: 125px;
+      float: left;
+      margin: 30px;
+    }
+
+    #footer {
+      background-color: #666;
+      clear:both;
+    }
+
+    h1 {
+      color: #000;
+      font-weight: normal;
+      padding: 50px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Exercise</h1>
+  <section id="wrapper">
+    <div id="navy">Navy</div>
+    <div id="teal">Teal</div>
+    <div id="blue">Blue</div>
+    <div id="aqua">Aqua</div>
+    <div id="footer">Footer</div>
   </section>
-  
+</body>
+
+</html>
