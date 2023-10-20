@@ -238,8 +238,7 @@ a[target="_blank"]{
 }
 
  /*copied some of this from  https://codepen.io/jupago/pen/dwZKbM 
- I removed the z-index bc not totallly sure what it does yet.
- why did they use background-image prop? The color block is not an image?*/
+ I removed the z-index bc not totally sure what it does for this block quote.*/
 
 #practice blockquote:before {
     position: absolute;
@@ -437,9 +436,7 @@ What does my blockquote look like on mobile...
 it doesn't appear my multiple column layouts are stacking...
 get more familiar with margins and how my "block quot:before" absolute positioned quotes work
 add a home icon
-add hamburger menu
-should the nav buttons be html button tags?
-*/
+add hamburger menu*/
 
 
 /* ---------------Poseidon Color Theme--------------------- */
