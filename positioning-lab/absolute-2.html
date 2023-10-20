@@ -36,48 +36,41 @@
       position: relative;
     }
 
-    #navy {
-      background-color: #001f3f;
+    .box {
       position: absolute;
-      top: 0;
-      left: 0;
       width: 150px;
       height: 150px;
+    }
+
+    #navy {
+      background-color: #001f3f;
+      top: 0;
+      left: 0;
     }
     
     #teal {
       background-color: #39CCCC;
-      position: absolute;
       top: 0;
       right: 0;
-      width: 150px;
-      height: 150px;
     }
 
     #blue {
       background-color: #0074D9;
-      position: absolute;
       bottom: 0;
       left: 0;
-      width: 150px;
-      height: 150px;
     }
 
     #aqua {
       background-color: #7FDBFF;
-      position: absolute;
       bottom: 0;
       right: 0;
-      width: 150px;
-      height: 150px;
     }
 
     #footer {
       background-color: #666;
-      width: 150px;
-      height: 150px;
-      margin: 20px auto;
-      clear: right;
+      top:50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
 
     h1 {
@@ -85,16 +78,17 @@
       font-weight: normal;
       padding: 50px;
     }
+    
   </style>
 </head>
 <body>
   <h1>Exercise</h1>
   <section id="wrapper">
-    <div id="navy">Navy</div>
-    <div id="teal">Teal</div>
-    <div id="blue">Blue</div>
-    <div id="aqua">Aqua</div>
-    <div id="footer">Footer</div>
+    <div id="navy" class="box">Navy</div>
+    <div id="teal" class="box">Teal</div>
+    <div id="blue" class="box">Blue</div>
+    <div id="aqua" class="box">Aqua</div>
+    <div id="footer" class="box">Footer</div>
   </section>
 </body>
 
