@@ -3,16 +3,22 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
   <title>IFSC 1310 | Kristena Merritt</title>
   <meta name="description" content="My collection of work from IFSC 1310 - Web Technologies with Mr. Wallace.">
   <meta name="author" content="Kristena Merritt">
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@600&display=swap" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <h1>Kristena Merritt</h1>
-  <nav>
+  <header class="primary">
+    <h1>Kristena Merritt</h1>
+    <h2>IFSC 1310</h2>
+    <nav>
     <ul>
         <li><a href="gordo/index.html">Prototype HTML5 Assignment</a></li>
         <li><a href="assets/img/css-diner-activity-completion.jpg">CSS Diner Exercise Completion</a></li>
@@ -27,47 +33,42 @@
         <li><a href="assets/img/flex-box-froggy-completion.png">Flexbox Froggy Completion</a></li>
         <li><a href="assets/img/bear-gawd-r800.jpg">Bear Gawd</a></li>
         <li><a href="assets/img/star-logo-r750.jpg">Star Logo</a></li>
-        <li><a href="spacex-v1/index.html">SpaceX Dragon Site</a></li>
-
-        
+        <li><a href="spacex-v1/index.html">SpaceX Dragon Site V1</a></li>
     </ul>
-  </nav>
+    </nav>
+  </header>
 
+  <section id="content" class="container">
+    <h1>Thoughts on Web Accessibility</h1>
+      <p>Before I started this class I was familiar with the basics of document and web page accessibility. Learning about web standards and semantic HTML has taken my knowledge to the next level because now I better understand how screen readers interact with the code. Learning about accessibility is an empowering and marketable skill, especially since accessibility will likely become protected by law.</p>
 
-  <section id="accessibility-thoughts">
-  <h1>Thoughts on Web Accessibility</h1>
-    <p>Before I started this class I was familiar with the basics of document and web page accessibility. Learning about web standards and semantic HTML has taken my knowledge to the next level because now I better understand how screen readers interact with the code. Learning about accessibility is an empowering and marketable skill, especially since accessibility will likely become protected by law.</p>
+    <h2>Why bother making your site accessible?</h2>
+      <p>It's easy to brush off accessibility or get a negative attitude about it. I know because I've experienced push back at my institution. "How many blind people actually visit our site?" The truth is, it doesn't matter how many people. We know someone is and they matter. It's also required by law! Section 508 requires federal institutions to make all digital information accessible to everyone including disabled people. AND it's the right thing to do. Not to mention making your website accessible improves the overall user experience and also boosts your SEO.</p>
 
-  <h2>Why bother making your site accessible?</h2>
-    <p>It's easy to brush off accessibility or get a negative attitude about it. I know because I've experienced push back at my institution. "How many blind people actually visit our site?" </p>
+      <p>Web accessibility has the power to include others and improve someone's life by making information available and usable. I try to incorporate accessibility into my workflow through writing in plain langauge, writing descriptive hyperlinks, using structure and styles in my documents, and adding alt text, especially when I'm creating training materials or working on external-facing resources. As long as I'm learning new things about accessibility I'm on the right track.</p>
 
-    <p>The truth is, it doesn't matter how many people. We know someone is and they matter. It's also required by law! Section 508 requires federal institutions to make all digital information accessible to everyone including disabled people. AND it's the right thing to do.</p>
+      <p class="special-text">Access-a-buddy status here I come!</p>
 
-    <p>Not to mention making your website accessible improves the overall user experience and also boosts your SEO.</p>
+    <h2>Areas for Learning: ARIAs (Accessible Rich Internet Applications)</h2>
 
-    <p>Web accessibility has the power to include others and improve someone's life by making information available and usable. I try to incorporate accessibility into my workflow through writing in plain langauge, writing descriptive hyperlinks, using structure and styles in my documents, and adding alt text, especially when I'm creating training materials or working on external-facing resources. As long as I'm learning new things about accessibility I'm on the right track.</p>
+      <p>I still need to learn more about using arias effectively. I played around with using the role tag and found that it was unnecessary for most situations using semantic HTML5. I was going to add a button role to my nav link in my CSS project, but I realized that I could change it to be a button tag instead and therefore wouldn't need the role tag. (I realize that messing with the HTML might not be a part of the assignment but I'm nerding out on it.) </p>
+    <h2>Accessibility for the Modern Web</h2>  
+      <p>This was an interesting talk on web accessibility, and it brought up a lot of good points. Businesses need to stop exculding an entire segment of their audience. Accessibility and usability testing should be at the forefront of any design process.</p>
 
-    <p class="special-text">Access-a-buddy status here I come!</p>
+    <h3>Why do we need to incorporate these accessibility hacks?</h3>
+      <q>Because of the decisions someone else made.</q> <cite>~Derek Featherstone</cite>
 
-  <h2>Areas for Learning: ARIAs (Accessible Rich Internet Applications)</h2>
+      <p>Derek sure has come up with some clever fixes though!</p>
 
-    <p>I still need to learn more about using arias effectively. I played around with using the role tag and found that it was unnecessary for most situations using semantic HTML5. I was going to add a button role to my nav link in my CSS project, but I realized that I could change it to be a button tag instead and therefore wouldn't need the role tag. (I realize that messing with the HTML might not be a part of the assignment but I'm nerding out on it.) 
-    </p>
-  <h2>Accessibility for the Modern Web</h2>  
-    <p>This was an interesting talk on web accessibility, and it brought up a lot of good points. Businesses need to stop exculding an entire segment of their audience. Accessibility and usability testing should be at the forefront of any design process.</p>
+      <p><strong>It reminds us that accessibility is something to focus on throughout development and testing.</strong> It's not an add-on for later, but hacks can be made to improve the user experience. Accessibility needs to be adopted as part of the workflow and businesses need to be held accountable for inaccessible products.
+      </p>
 
-  <h3>Why do we need to incorporate these accessibility hacks?</h3>
-    <q>Because of the decisions someone else made.</q> <cite>~Derek Featherstone</cite>
+      <p>It's important to continue learning and working towards accessibility in everything we develop.</p>
 
-    <p class="special-text">Derek sure has come up with some clever fixes though!</p>
-
-    <p><strong>It reminds us that accessibility is something to focus on throughout development and testing.</strong> It's not an add-on for later, but hacks can be made to improve the user experience. Accessibility needs to be adopted as part of the workflow and businesses need to be held accountable for inaccessible products.
-    </p>
-
-    <p>It's important to continue learning and working towards accessibility in everything we develop.</p>
-
-    <q>Guidelines are the baseline, not the finish line.</q> <cite>~Derek Featherstone</cite>
-  </section> <!--end of accessibility section-->
+      <q>Guidelines are the baseline, not the finish line.</q> <cite>~Derek Featherstone</cite>
+  </section> 
+  
+  <!--end of accessibility section-->
 
 </body>
 </html>

@@ -112,7 +112,7 @@ header.primary nav ul{
 header.primary nav ul li{
     list-style-type:none;
 }
-/*list-style-type with value none is to strip out the bullets*/
+/*list-style-type with value none to remove bullets*/
 
 header.primary nav a {
     color:#fff;
