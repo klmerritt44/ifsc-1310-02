@@ -1,9 +1,95 @@
 @import url('https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
-body {
-    font-family: 'MuseoModerno', sans-serif;
+/* SpaceX Stylesheet v1*/
+
+/* ---------box sizing--------- */
+
+html{
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+  /* ---------responsive images--------- */
+
+img {
+    max-width:100%;
+    height: auto;
 }
 
+/* --------utility styles-------- */
+
+.container{
+    width:80vw;
+    margin:10px auto;
+}
+
+.img-right{
+    float:right;
+    margin: 10px 0 10px 20px;
+    border: 4px double #20627d;
+    padding: 5px;
+}
+
+.img-left {
+    float:left;
+    margin: 10px 20px 10px 0px;
+    border: 4px double #20627d;
+    padding: 5px;
+}
+
+.img-center {
+    display: block;
+    padding: 5px;
+    margin: 20px auto;
+    border: 4px double #20627d;
+    padding: 5px;
+}
+
+/* ---------global styles--------- */
+
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0px;
+}
+
+header.primary {
+    background-color: #151859;
+    color: #fff;
+    margin: 0px;
+}
+
+header.primary::before{
+    content: "";
+    background-image: url("../img/spacex-crew-dragon-flight-hero.jpg");
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    opacity: 0.4;
+}
+
+header.primary h1 a {
+    background: url("../img/spacex-logo.png") no-repeat;
+    display: block;
+    margin: 0px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+header.primary a {
+    color: #fff;
+}
+
+h1 {
+    font-family: 'MuseoModerno', sans-serif;
+}
 
 
 /*------galactic color scheme from adobe color
@@ -12,7 +98,7 @@ Color Theme Swatches in Hex
 .The-deep-indigo-and-purple-of-the-galactic-magnetic-fields-glimmer-and-sparkle-as-they-interact-with-gaseous-particles-forming-a-web-of-energy-and-light.-Tiny-stars-flicker-in-and-out-of-existence-and-2-hex { color: #3C308C; }
 .The-deep-indigo-and-purple-of-the-galactic-magnetic-fields-glimmer-and-sparkle-as-they-interact-with-gaseous-particles-forming-a-web-of-energy-and-light.-Tiny-stars-flicker-in-and-out-of-existence-and-3-hex { color: #090826; }
 .The-deep-indigo-and-purple-of-the-galactic-magnetic-fields-glimmer-and-sparkle-as-they-interact-with-gaseous-particles-forming-a-web-of-energy-and-light.-Tiny-stars-flicker-in-and-out-of-existence-and-4-hex { color: #151859; }
-.The-deep-indigo-and-purple-of-the-galactic-magnetic-fields-glimmer-and-sparkle-as-they-interact-with-gaseous-particles-forming-a-web-of-energy-and-light.-Tiny-stars-flicker-in-and-out-of-existence-and-5-hex { color: #0F1140; }
+.The-deep-indigo-and-purple-of-the-galactic-magnetic-fields-glimmer-and-sparkle-as-they-interact-with-gaseous-particles-forming-a-web-of-energy-and-light.-Tiny-stars-flicker-in-and-out-of-existence-and-5-hex { color: #0F1140; } Teal
 
 Color Theme Swatches in RGBA
 .The-deep-indigo-and-purple-of-the-galactic-magnetic-fields-glimmer-and-sparkle-as-they-interact-with-gaseous-particles-forming-a-web-of-energy-and-light.-Tiny-stars-flicker-in-and-out-of-existence-and-1-rgba { color: rgba(151, 121, 216, 1); }
