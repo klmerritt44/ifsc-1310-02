@@ -58,20 +58,15 @@ body {
 }
 
 header.primary {
-    background-color: #151859;
     color: #fff;
     margin: 0px;
-}
-
-header.primary::before{
-    content: "";
     background-image: url("../img/spacex-crew-dragon-flight-hero.jpg");
     background-size: cover;
-    position: absolute;
     top: 0px;
     right: 0px;
+    left: 0px;
     bottom: 0px;
-    opacity: 0.4;
+    height: 100vh;
 }
 
 header.primary h1 a {
@@ -83,12 +78,47 @@ header.primary h1 a {
     overflow: hidden;
 }
 
-header.primary a {
-    color: #fff;
+header.primary h2 {
+    font-size: 1.4rem;
+    text-shadow: 2px 2px 10px #000000;
+}
+
+header.primary nav{
+    display: block;
+    
+}
+
+header.primary nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0;
+}
+
+header.primary nav ul li{
+    list-style-type:none;
+}
+
+header.primary nav a {
+    color:#fff;
+    font-size: 1rem;
+    text-decoration:none;
+    background-color:#000000;
+    background-color:rgba(0,0,0,.2);
+    padding:8px 16px;
+    transition: .4s;
+    border: 1px solid #9879D9;
+}
+
+header.primary nav a:hover,
+header.primary nav a:active
+{
+    background-color:rgba(0,0,0,.6);
 }
 
 h1 {
     font-family: 'MuseoModerno', sans-serif;
+    margin: 0px;
 }
 
 
