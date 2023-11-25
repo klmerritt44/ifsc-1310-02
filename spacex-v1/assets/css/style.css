@@ -57,6 +57,11 @@ body {
     margin: 0px;
 }
 
+h1 {
+    font-family: 'MuseoModerno', sans-serif;
+    margin: 0px;
+}
+
 header.primary {
     color: #fff;
     margin: 0px;
@@ -68,6 +73,8 @@ header.primary {
     bottom: 0px;
     height: 100vh;
 }
+
+/*----add opacity to darken image---*/
 
 header.primary h1 a {
     background: url("../img/spacex-logo.png") no-repeat;
@@ -85,7 +92,6 @@ header.primary h2 {
 
 header.primary nav{
     display: block;
-    
 }
 
 header.primary nav ul{
@@ -116,11 +122,60 @@ header.primary nav a:active
     background-color:rgba(0,0,0,.6);
 }
 
-h1 {
-    font-family: 'MuseoModerno', sans-serif;
-    margin: 0px;
+#intro{
+    padding-bottom:20px;
+    background-color: #fff;
+    padding: 40px;
 }
 
+#content {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    gap:20px;
+    border-bottom: 1px solid #151859;;
+    padding-bottom:2.6rem;
+}
+
+#content article.post{
+    box-shadow: 4px 4px 15px rgb(40, 117, 104);    
+    padding:10px;
+    font-size: 1.1rem;
+    transition:.5s;
+    background-color: #fbfbfbad;
+  }
+
+#content article.post:hover {
+    box-shadow: 0 12px 8px rgba(0,0,0,.4);
+    padding:10px;
+    transition: .5s;
+    background-color: #fbfbfbea
+}
+
+article.post figure {
+    margin:0;
+}
+
+figcaption{
+    text-transform:uppercase;
+    color: #20627d;
+    font-size: .8rem;
+}
+
+article.post img {
+    border:solid 1px #50A0BF;
+    padding:5px 10px;
+    border-radius:2px;
+}
+
+article.post a {
+    color: #023859;
+    transition:.5s;
+}
+
+article.post a:hover{
+    text-decoration: none;
+}
 
 /*------galactic color scheme from adobe color
 Color Theme Swatches in Hex

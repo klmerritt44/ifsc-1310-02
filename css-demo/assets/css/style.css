@@ -51,9 +51,8 @@ img {
 
 .img-center {
     display: block;
-    padding: 5px;
     margin: 20px auto;
-    border: 4px double #20627d;
+    border: 4px solid #20627d;
     padding: 5px;
 }
 
