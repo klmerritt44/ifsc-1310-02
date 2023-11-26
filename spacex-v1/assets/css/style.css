@@ -78,6 +78,7 @@ header.primary {
     height: 300px;
     position: relative;
     text-align: center;
+    padding-top: 10px;
 }
 
 header.primary.hero-image {
@@ -172,6 +173,18 @@ header.primary nav a:active
     padding: 4em 0;
     color: #000;
 }
+
+#content details {
+    padding: 40px 0px;
+    border-bottom: 1px solid;
+}
+
+#content summary {
+    font-size: 1.2rem;
+    color: #0F1140;
+    font-weight:900
+}
+
 
 /*-------------articles---------------*/
 
