@@ -61,9 +61,12 @@ body {
     margin: 0px;
 }
 
-h1 {
+h1,h2,h3 {
     font-family: 'MuseoModerno', sans-serif;
+    margin-top: 20px;
 }
+
+
 
 
 /*-------primary header---------*/
@@ -170,7 +173,7 @@ header.primary nav a:active
 
 #content{
     background-color: #fff;
-    padding: 4em 0;
+    padding: 1em 0;
     color: #000;
 }
 
@@ -180,10 +183,40 @@ header.primary nav a:active
 }
 
 #content summary {
+    font-family: 'MuseoModerno', sans-serif;
     font-size: 1.2rem;
     color: #0F1140;
     font-weight:900
 }
+
+#content table {
+    border: 1px solid;
+    border-collapse: collapse;
+}
+
+#content table th {
+    background-color: rgba(14, 17, 63, 1);
+    color: #fff;
+    padding: 15px;
+}
+
+#content table td {
+    padding: 10px;
+    border: 1px solid;
+}
+
+#content table caption {
+    display: none;
+}
+
+#content tr:nth-child(even) {
+    background-color: rgba(14, 17, 63, .08);
+}
+
+#content tr:hover {
+    background-color: rgba(14, 17, 63, .2);
+}
+
 
 
 /*-------------articles---------------*/
