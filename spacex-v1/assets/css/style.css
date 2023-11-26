@@ -137,7 +137,6 @@ header.primary nav a {
     color:#fff;
     font-size: .9rem;
     text-decoration:none;
-    background-color:#000000;
     background-color:rgba(0,0,0,.4);
     padding:8px 16px;
     transition: .4s;
@@ -265,11 +264,57 @@ footer#colophon {
     background-color: #000;
     padding: 10px;
     color: #fff;
+    margin: auto;
 }
 
-footer#colophon a {
+footer#colophon h6 a{
     color: #fff;
 }
+
+footer#colophon a.shop {
+    color:#9879D9;
+    font-size: .9rem;
+    text-decoration:none;
+    background-color:rgba(0,0,0,.4);
+    padding:8px 16px;
+    transition: .4s;
+    border: 1px solid #9879D9;
+}
+
+
+
+/* ---------------Media Queries----------------- */
+
+@media screen and (max-width: 600px) {
+    header.primary nav ul {
+      flex-direction: column;
+      margin: 0 auto;
+      width: 400px;
+    }
+  
+    header.primary nav ul li {
+      margin-bottom: 10px;
+      width: 400px;
+    }
+  
+    header.primary nav ul li a {
+      display: block;
+    }
+  
+    section#articles .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      border-bottom: 1px solid #c0c0c0;
+      padding: 0 0 4em 0;
+    }
+  
+    #articles article.post {
+      width: 100%;
+      margin-bottom: 2em;
+    }
+  }
 
 
 /*------galactic color scheme from adobe color
