@@ -66,29 +66,45 @@ h1 {
 }
 
 
+/*-------primary header---------*/
+
 header.primary {
     color: #fff;
-    background-color: #000;
+    background-color: #0F1140;
     top: 0px;
     right: 0px;
     left: 0px;
     bottom: 0px;
-    height: 100vh;
+    height: 300px;
     position: relative;
     text-align: center;
 }
 
+header.primary.hero-image {
+    height: 100vh;
+    background-color: #000;
+}
+
 header.primary::before {
     content: "";
-    background-image: url("../img/spacex-crew-dragon-flight-hero.jpg");
     background-size: cover;
     position: absolute;
     top: 0px;
     right: 0px;
     bottom: 0px;
     left: 0px;
+}
+
+header#main-hero::before {
+    background-image: url("../img/spacex-crew-dragon-flight-hero.jpg");
     opacity: 0.8;
 }
+
+header#history-hero::before {
+    background-image: url("../img/spacex-falcon-9-rocket-with-crew-dragon.jpg");
+    opacity: 0.4;
+}
+
 
 header.primary h1 {
     font-size: 3.2rem;
@@ -262,9 +278,12 @@ aside article.widget a {
 
 footer#colophon {
     background-color: #000;
-    padding: 10px;
+    padding: 30px 70px;
     color: #fff;
-    margin: auto;
+}
+
+footer#colophon h6 {
+    margin-bottom: 0px;
 }
 
 footer#colophon h6 a{
