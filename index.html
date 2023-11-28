@@ -39,23 +39,45 @@
   </header>
 
   <section id="content" class="container">
-    <h1>Thoughts on Web Accessibility</h1>
-      <p>Before I started this class I was familiar with the basics of document and web page accessibility. Learning about web standards and semantic HTML has taken my knowledge to the next level because now I better understand how screen readers interact with the code. Learning about accessibility is an empowering and marketable skill, especially since accessibility will likely become protected by law.</p>
+    <h2>Thoughts on Progressive Enhancement</h2>
+    <p>I've never heard of either graceful degredation or progressive enhancement before, but I'm beginning to understand both methodologies. Progressive enhancement is a more accessible and fair approach to web design because it focuses on creating usable experiences for the broadest audience no matter their browser, device, or disability barrier. Progressive enhancement creates robust layers of experience starting with the most basic and most important layer, the content and structure. If this is the only available layer to the user, then it's still usable since they can access the content to reach their goals.</p>
 
-    <h2>Why bother making your site accessible?</h2>
-      <p>It's easy to brush off accessibility or get a negative attitude about it. I know because I've experienced push back at my institution. "How many blind people actually visit our site?" The truth is, it doesn't matter how many people. We know someone is and they matter. It's also required by law! Section 508 requires federal institutions to make all digital information accessible to everyone including disabled people. AND it's the right thing to do. Not to mention making your website accessible improves the overall user experience and also boosts your SEO.</p>
+    <p>I like Aaron Gustafson's take in this additional article <a href="https://www.aaron-gustafson.com/notebook/progressive-misconceptions/">Progressive Misconceptions</a>. I think it's helpful to think of progressive enhancement as graceful degradation at it's best. We don't need to use JavaScript or CSS to convey meaning. Instead, we can use HTML for content, CSS for presentation, and JavaScript for behavior. Javascript can be used to test browser functions to tailor the programmatic enhancements for that particular situation. I am starting to see the importance of considering non-javascript experiences during the development process.</p>
 
-      <p>Web accessibility has the power to include others and improve someone's life by making information available and usable. I try to incorporate accessibility into my workflow through writing in plain langauge, writing descriptive hyperlinks, using structure and styles in my documents, and adding alt text, especially when I'm creating training materials or working on external-facing resources. As long as I'm learning new things about accessibility I'm on the right track.</p>
+    <blockquote>Progressive enhancement embraces the idea of experience as a continuum rather than some singular ideal. It recognizes that every person is different and we all have special requirements for Web access. Some may depend on our browser, the device we’re on, and the network we are using. Others may be the result of a limitation we have dealt with since birth, are dealing with temporarily as the result of an injury or incident, or are simply a factor of our current situation. We all experience the world differently and progressive enhancement not only respects that, it embraces that variability.</blockquote><cite>~Aaron Gustafson</cite>
 
-      <p class="special-text">Access-a-buddy status here I come!</p>
+    <h3>References</h3>
+    <ul>
+      <li><a href="https://alistapart.com/article/understandingprogressiveenhancement/">Understanding Progressive Enhancement</a></li>
+      <li><a href="https://alistapart.com/article/understandingprogressiveenhancement/">Progressive Misconceptions</a></li>
+      <li><a href="https://briefs.video/videos/is-progressive-enhancement-dead-yet/">Is progressive enhancement dead yet?</a></li>
+    </ul>
 
-    <h2>Areas for Learning: ARIAs (Accessible Rich Internet Applications)</h2>
+    <h3>Additional Reading</h3>
+    <ul>
+      <li><a href="https://www.w3.org/wiki/Graceful_degradation_versus_progressive_enhancement">Graceful Degradation Vs Progressive Enhancement</a></li>
+      <li><a href="https://alistapart.com/article/yes-that-web-project-should-be-a-pwa/">Yes, That Web Project Should be a PWA</a></li>
+      <li><a href="https://www.boia.org/blog/does-javascript-make-my-site-less-accessible">Does JavaScript make my site less accessible?</a></li>
+      <li><a href="https://alistapart.com/article/separationdilemma/">Seperation Dilemma</a></li>
+    </ul>
+
+    <h2>Thoughts on Web Accessibility</h2>
+    <p>Before I started this class I was familiar with the basics of document and web page accessibility. Learning about web standards and semantic HTML has taken my knowledge to the next level because now I better understand how screen readers interact with the code. Learning about accessibility is an empowering and marketable skill, especially since accessibility will likely become protected by law.</p>
+
+    <h3>Why bother making your site accessible?</h3>
+    <p>It's easy to brush off accessibility or get a negative attitude about it. I know because I've experienced push back at my institution. "How many blind people actually visit our site?" The truth is, it doesn't matter how many people. We know someone is and they matter. It's also required by law! Section 508 requires federal institutions to make all digital information accessible to everyone including disabled people. AND it's the right thing to do. Not to mention making your website accessible improves the overall user experience and also boosts your SEO.</p>
+
+    <p>Web accessibility has the power to include others and improve someone's life by making information available and usable. I try to incorporate accessibility into my workflow through writing in plain langauge, writing descriptive hyperlinks, using structure and styles in my documents, and adding alt text, especially when I'm creating training materials or working on external-facing resources. As long as I'm learning new things about accessibility I'm on the right track.</p>
+
+    <p class="call-out">Access-a-buddy status here I come!</p>
+
+    <h3>Areas for Learning: ARIAs (Accessible Rich Internet Applications)</h3>
 
       <p>I still need to learn more about using arias effectively. I played around with using the role tag and found that it was unnecessary for most situations using semantic HTML5. I was going to add a button role to my nav link in my CSS project, but I realized that I could change it to be a button tag instead and therefore wouldn't need the role tag. (I realize that messing with the HTML might not be a part of the assignment but I'm nerding out on it.) </p>
-    <h2>Accessibility for the Modern Web</h2>  
+    <h3>Accessibility for the Modern Web</h3>  
       <p>This was an interesting talk on web accessibility, and it brought up a lot of good points. Businesses need to stop exculding an entire segment of their audience. Accessibility and usability testing should be at the forefront of any design process.</p>
 
-    <h3>Why do we need to incorporate these accessibility hacks?</h3>
+    <h4>Why do we need to incorporate these accessibility hacks?</h4>
       <q>Because of the decisions someone else made.</q> <cite>~Derek Featherstone</cite>
 
       <p>Derek sure has come up with some clever fixes though!</p>
