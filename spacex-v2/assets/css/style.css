@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+/* SpaceX Stylesheet v1*/
+
+/* ---------box sizing--------- */
+
+html{
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+  /* ---------responsive images--------- */
+
+img {
+    max-width:100%;
+    height: auto;
+}
+
+/* --------utility styles-------- */
+
+.container{
+    width:80vw;
+    margin: 40px auto;
+    max-width: 900px;
+}
+
+.img-right{
+    float:right;
+    margin: 10px 0 10px 20px;
+    padding: 5px;
+}
+
+.img-left {
+    float:left;
+    margin: 10px 20px 10px 0px;
+    padding: 5px;
+}
+
+.img-center {
+    display: block;
+    padding: 5px;
+    margin: 20px auto;
+    padding: 5px;
+}
+
+/* ---- Responsive Images ----*/
+img {
+    max-width: 100%;
+    height: auto;
+  }
+
+/* ---------global styles--------- */
+
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0px;
+}
+
+h1,h2,h3 {
+    font-family: 'MuseoModerno', sans-serif;
+    margin-top: 20px;
+}
+
+
+
+
+/*-------primary header---------*/
+
+header.primary {
+    color: #fff;
+    background-color: #0F1140;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    height: 300px;
+    position: relative;
+    text-align: center;
+    padding-top: 10px;
+}
+
+header.primary.hero-image {
+    height: 100vh;
+    background-color: #000;
+}
+
+header.primary::before {
+    content: "";
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+
+header#main-hero::before {
+    background-image: url("../img/spacex-crew-dragon-flight-hero.jpg");
+    opacity: 0.8;
+}
+
+header#history-hero::before {
+    background-image: url("../img/spacex-falcon-9-rocket-with-crew-dragon.jpg");
+    opacity: 0.4;
+}
+
+
+header.primary h1 {
+    font-size: 3.2rem;
+    margin: 0px;
+    position: relative;
+  }
+
+header.primary h1 a {
+    background: url("../img/spacex-logo.png") no-repeat;
+    display: block;
+    width: 300px;
+    height: 70px;
+    margin: 0px auto;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/*----ask about width and height properties for the logo header.primary h1 a. V2 I want left-aligned logo and tagline with top right-aligned nav items.----*/
+
+header.primary h2 {
+    font-size: 1.3rem;
+    font-family: 'MuseoModerno', sans-serif;
+    text-shadow: 2px 2px 3px #000000;
+    margin: 20px auto 40px;
+    position: relative;
+}
+
+header.primary nav{
+    display: block;
+}
+
+header.primary nav ul{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0;
+}
+
+header.primary nav ul li{
+    list-style-type:none;
+}
+
+header.primary nav a {
+    color:#fff;
+    font-size: .9rem;
+    text-decoration:none;
+    background-color:rgba(0,0,0,.4);
+    padding:8px 16px;
+    transition: .4s;
+    border: 1px solid #9879D9;
+}
+
+header.primary nav a:hover,
+header.primary nav a:active
+{
+    background-color:rgba(0,0,0,.7);
+}
+
+/*-----------content-------------*/
+
+#content{
+    background-color: #fff;
+    padding: 1em 0;
+    color: #000;
+}
+
+#content details {
+    padding: 40px 0px;
+    border-bottom: 1px solid;
+}
+
+#content summary {
+    font-family: 'MuseoModerno', sans-serif;
+    font-size: 1.2rem;
+    color: #0F1140;
+    font-weight:900
+}
+
+#content table {
+    border: 1px solid;
+    border-collapse: collapse;
+}
+
+#content table th {
+    background-color: rgba(14, 17, 63, 1);
+    color: #fff;
+    padding: 15px;
+}
+
+#content table td {
+    padding: 10px;
+    border: 1px solid;
+}
+
+#content table caption {
+    display: none;
+}
+
+#content tr:nth-child(even) {
+    background-color: rgba(14, 17, 63, .08);
+}
+
+#content tr:hover {
+    background-color: rgba(14, 17, 63, .2);
+}
+
+
+
+/*-------------articles---------------*/
+
+#articles {
+    background-color: #090826;
+}
+
+section#articles .container{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #c0c0c0;
+    padding: 0 0 4em 0;
+}
+
+#articles h2 {
+    flex: 0 0 100%;
+    color: #fff;
+}
+
+article.post{
+    width: 30%;
+    box-shadow: 4px 4px 15px rgba(14, 17, 63, 1);   
+    padding:10px;
+    font-size: 1.1rem;
+    transition:.5s;
+    background-color: #fbfbfbad;
+  }
+
+article.post:hover {
+    box-shadow: 0 12px 8px rgba(0,0,0,.4);
+    padding:10px;
+    transition: .5s;
+    background-color: #fbfbfbea;
+}
+
+article.post figure {
+    margin:0;
+}
+
+figcaption{
+    text-transform:uppercase;
+    color: #20627d;
+    font-size: .8rem;
+}
+
+article.post img {
+    padding:5px 10px;
+    border-radius:2px;
+}
+
+article.post a {
+    color: #023859;
+    transition:.5s;
+}
+
+article.post a:hover{
+    text-decoration: none;
+}
+
+/*----------hero------------*/
+
+#hero {
+    padding: 4em 0;
+}
+
+/*----------aside------------*/
+
+aside[role="complementary"] {
+   background-color: #090826;
+   color: #fff;
+   padding: 2.5em;
+}
+
+aside .container {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+aside article.widget {
+    width: 40%;
+  }
+
+  .widget.overview table {
+    font-size: 0.8em;
+    border-collapse: collapse;
+  }
+  
+.widget.overview table td {
+    border-bottom: .05px solid #fff;
+    padding: 10px;
+  }
+  
+aside article.widget a {
+    display: block;
+    padding-top: 20px;
+    color: #9879D9;
+}  
+
+
+/*----------footer------------*/
+
+footer#colophon {
+    background-color: #000;
+    padding: 30px 70px;
+    color: #fff;
+}
+
+footer#colophon h6 {
+    margin-bottom: 0px;
+}
+
+footer#colophon h6 a{
+    color: #fff;
+}
+
+footer#colophon a.shop {
+    color:#9879D9;
+    font-size: .9rem;
+    text-decoration:none;
+    background-color:rgba(0,0,0,.4);
+    padding:8px 16px;
+    transition: .4s;
+    border: 1px solid #9879D9;
+}
+
+
+
+/* ---------------Media Queries----------------- */
+
+@media screen and (max-width: 600px) {
+    header.primary nav ul {
+      flex-direction: column;
+      margin: 0 auto;
+      width: 400px;
+    }
+  
+    header.primary nav ul li {
+      margin-bottom: 10px;
+      width: 400px;
+    }
+  
+    header.primary nav ul li a {
+      display: block;
+    }
+  
+    section#articles .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      border-bottom: 1px solid #c0c0c0;
+      padding: 0 0 4em 0;
+    }
+  
+    #articles article.post {
+      width: 100%;
+      margin-bottom: 2em;
+    }
+  }
+
+
+/*------galactic color scheme from adobe color
+Color Theme Swatches in Hex
+#9879D9; light purple
+#3C308C; true purple
+#090826; near black (dark bg color)
+#151859; true blue
+#0F1140; darkest blue
+
+Color Theme Swatches in RGBA
+rgba(151, 121, 216, 1); 
+rgba(60, 47, 140, 1);
+rgba(8, 7, 38, 1);
+rgba(20, 23, 89, 1);
+rgba(14, 17, 63, 1);
+
+Color Theme Swatches in HSLA
+hsla(258, 55, 66, 1);
+hsla(247, 49, 36, 1);
+hsla(241, 66, 9, 1);
+hsla(236, 62, 21, 1);
+hsla(236, 62, 15, 1);
+
+-------*/
