@@ -66,14 +66,11 @@ h1,h2,h3 {
     margin-top: 20px;
 }
 
-
-
-
 /*-------primary header---------*/
 
 header.primary {
     color: #fff;
-    background-color: #0F1140;
+    background-color: #000;
     top: 0px;
     right: 0px;
     left: 0px;
@@ -217,8 +214,6 @@ header.primary nav a:active
     background-color: rgba(14, 17, 63, .2);
 }
 
-
-
 /*-------------articles---------------*/
 
 #articles {
@@ -283,6 +278,35 @@ article.post a:hover{
 
 #hero {
     padding: 4em 0;
+}
+
+/* Customize Previous/Next/Dots/Autoplay */
+
+.slick-autoplay-toggle-button,
+.slick-prev .slick-prev-icon, .slick-next .slick-next-icon,
+.slick-dots li button .slick-dot-icon,
+.slick-dots li.slick-active button .slick-dot-icon {
+  color: #B5A7E9;
+}
+
+/* Customize Previous/Next/Dots/Autoplay - Active State */
+
+.slick-next:focus .slick-next-icon,
+.slick-next:focus .slick-prev-icon,
+.slick-prev:focus .slick-next-icon,
+.slick-prev:focus .slick-prev-icon,
+.slick-dots li button:focus .slick-dot-icon:before,
+.slick-dots li.slick-active button:focus .slick-dot-icon,
+.slick-autoplay-toggle-button:focus 
+{
+    color:#ECE4F2;
+    
+}
+
+
+.slick-prev .slick-prev-icon:before {
+    margin: -30px;
+    content: "»";
 }
 
 /*----------aside------------*/
