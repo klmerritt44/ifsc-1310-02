@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Griffy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sintony&display=swap');
+
 html{
     box-sizing: border-box;
   }
@@ -52,34 +55,40 @@ body{
 /*-----global styles------*/
 body {
     font-family: 'Open Sans', sans-serif;
+    font-size: 1.1rem;
+    margin:0;
 }
 
 h1 {
-    font-family: 'Hind Siliguri', sans-serif;
-    font-size: 2.3rem;
+    font-family: 'Griffy', sans-serif;
+    font-size: 2.6rem;
     text-align: left;
+    font-weight: normal;
+    
 }
 
 h2 {
     color: #012030;
-    font-size: 1.9rem;
+    font-family: 'Sintony', sans-serif;
+    font-size: 1.8rem;
     text-align:left;
+    font-weight: normal;
 }
 
 header.primary{
     color:#ffffff;
-    text-align:center;
     padding:30px;
-    background-color:#012030;
+    background-color:#4A3259;
+    margin: 0;
 }
 
-header.primary h1 a {
+header.primary h1 {
     color:#D8EBF2;
-    text-decoration:none;
+    font-size: 2.3rem;
 }
 
 header.primary h2{
-    font-size: 1.7rem;
+    font-size: 1.3rem;
     margin-bottom: 30px;
     color: #D8EBF2;
 }
@@ -87,16 +96,15 @@ header.primary h2{
 header.primary nav{
     max-width:900px;
     text-align: left;
- 
 }
 
 header.primary nav a {
     color:#fff;
     font-size: 1rem;
-   
 }
 
 #content {
    background-color: #fff;
-   padding: 30px;
+   padding: 30px 60px 60px 60px;
+   line-height: 1.5;
 }
