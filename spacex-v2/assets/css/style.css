@@ -158,6 +158,7 @@ header.primary nav a {
     padding:8px 16px;
     transition: .4s;
     border: 1px solid #9879D9;
+    border-radius: 5px;
 }
 
 header.primary nav a:hover,
@@ -172,6 +173,10 @@ header.primary nav a:active
     background-color: #fff;
     padding: 1em 0;
     color: #000;
+}
+
+#content h2.main {
+    font-size: 1.9rem;
 }
 
 #content details {
@@ -241,6 +246,7 @@ article.post{
     font-size: 1.1rem;
     transition:.5s;
     background-color: #fbfbfbad;
+    border-radius: 10px;
   }
 
 article.post:hover {
@@ -278,6 +284,7 @@ article.post a:hover{
 
 #hero {
     padding: 4em 0;
+    max-width: 800px;
 }
 
 /* Customize Previous/Next/Dots/Autoplay */
@@ -286,7 +293,9 @@ article.post a:hover{
 .slick-prev .slick-prev-icon, .slick-next .slick-next-icon,
 .slick-dots li button .slick-dot-icon,
 .slick-dots li.slick-active button .slick-dot-icon {
-  color: #B5A7E9;
+  color: #090826;
+  font-size: 2rem;
+ 
 }
 
 /* Customize Previous/Next/Dots/Autoplay - Active State */
@@ -299,14 +308,11 @@ article.post a:hover{
 .slick-dots li.slick-active button:focus .slick-dot-icon,
 .slick-autoplay-toggle-button:focus 
 {
-    color:#ECE4F2;
-    
+    color:#9879D9;
 }
 
-
 .slick-prev .slick-prev-icon:before {
-    margin: -30px;
-    content: "»";
+    margin: -2rem;
 }
 
 /*----------aside------------*/
@@ -360,7 +366,7 @@ footer#colophon h6 a{
     color: #fff;
 }
 
-footer#colophon a.shop {
+footer#colophon a.cta {
     color:#9879D9;
     font-size: .9rem;
     text-decoration:none;
@@ -369,8 +375,6 @@ footer#colophon a.shop {
     transition: .4s;
     border: 1px solid #9879D9;
 }
-
-
 
 /* ---------------Media Queries----------------- */
 

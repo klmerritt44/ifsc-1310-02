@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    $('.hero').slick({
+    $('#hero').slick({
       dots: true,
       infinite: true,
       speed: 900,
