@@ -243,6 +243,19 @@ header.primary nav a:active
     }
 }
 
+/*-----------contact form-------------*/
+
+.contact {
+    width: 100%;
+}
+
+content.container.contact div {
+    margin-bottom: 90px;
+}
+
+div#footer {
+    margin-top: 100px;
+}
 
 /*-----------content-------------*/
 
