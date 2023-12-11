@@ -365,11 +365,12 @@ section#articles .container{
     font-size: 1.8rem;
 }
 
-#articles h2 a {
+#articles h3 a {
     text-decoration: none;
+    font-size: 1.5rem;
 }
 
-#articles h2 a:hover {
+#articles h3 a:hover {
     text-decoration: underline;
 }
 
@@ -569,7 +570,6 @@ footer#colophon a.cta {
       height: 100px;
     }
   }
-  
 
 
 /*------galactic color scheme from adobe color
