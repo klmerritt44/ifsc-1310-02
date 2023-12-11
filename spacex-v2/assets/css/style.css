@@ -270,7 +270,7 @@ header.primary nav a:active
     justify-content: space-around;
     align-items: center;
     font-size: 1.1rem;;
-    background: url('../img/stars-bg.jpg') no-repeat center center / cover;
+    background: url('../img/stars-color.jpg') no-repeat center center / cover;
     color: white;
     border-bottom: solid 2px #000;
 }
@@ -288,7 +288,7 @@ header.primary nav a:active
     align-items: center;
     justify-content: center;
     background-color: rgba(0,0,0,0.1);
-    border: 5px solid rgba(255, 253, 253, 0.449);
+    border: 3px solid rgba(255, 255, 255, 0.213);
     width: 140px;
     height: 140px;
     border-radius: 99px;
@@ -298,8 +298,8 @@ header.primary nav a:active
 .hours,
 .minutes,
 .seconds {
-    font-size: 2.5em; 
-    margin: 10px 0;
+    font-size: 2em; 
+    margin: 12px 0;
     }
       
 .days-label,
