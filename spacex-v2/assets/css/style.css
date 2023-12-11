@@ -50,12 +50,12 @@ img {
 
 a.cta {
     color:#9879D9;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     text-decoration:none;
-    background-color:rgba(0,0,0,.9);
-    padding:12px 16px;
+    background-color: #000;
+    padding:16px 16px;
     transition: .4s;
-    border: 1px solid #9879D9;
+    border: 3px solid #9879D9;
     margin: 40px 30px;
 }
 
@@ -85,6 +85,11 @@ body {
 h1,h2,h3 {
     font-family: 'MuseoModerno', sans-serif;
     margin-top: 30px;
+}
+
+body h2 {
+    font-size: 1.9rem;
+    line-height: 2.2rem;
 }
 
 a:hover {
@@ -178,13 +183,13 @@ header.primary nav ul li{
 
 header.primary nav a {
     color:#fff;
-    font-size: .9rem;
+    font-size: 1rem;
     text-decoration:none;
     background-color:rgba(0,0,0,.7);
     padding:8px 16px;
     transition: .4s;
     border: 1px solid #9879D9;
-    border-radius: 5px;
+    border-radius: 1px;
 }
 
 header.primary nav a:hover,
@@ -243,13 +248,8 @@ header.primary nav a:active
 
 #content{
     background-color: #fff;
-    padding: 1em 0;
+    padding: 1em 0 2em 0;
     color: #000;
-}
-
-#content h2.main {
-    font-size: 1.9rem;
-    line-height: 2.2rem;
 }
 
 #content iframe {
@@ -258,13 +258,18 @@ header.primary nav a:active
 
 .countdown-container {
     display: flex;
-    margin: 0 auto;
+    margin: -40px auto;
     padding: 2rem;
     justify-content: space-around;
     align-items: center;
     font-size: 1.1rem;;
     background: url('../img/stars-bg.jpg') no-repeat center center / cover;
     color: white;
+    border-bottom: solid 2px #000;
+}
+
+.countdown-container h2 {
+    font-size: 1.8rem;
 }
 
 .days-container,
@@ -350,13 +355,14 @@ section#articles .container{
     flex-direction:row;
     justify-content:space-between;
     flex-wrap: wrap;
-    border-bottom: 1px solid #c0c0c0;
     padding: 0 0 4em 0;
 }
 
 #articles h2 {
     flex: 0 0 100%;
     color: #fff;
+    margin-top: 3rem;
+    font-size: 1.8rem;
 }
 
 #articles h2 a {
@@ -375,16 +381,16 @@ section#articles .container{
 article.post{
     width: 30%;
     box-shadow: 4px 4px 15px rgba(14, 17, 63, 1);   
-    padding:10px;
-    font-size: 1.1rem;
+    padding:20px;
+    font-size: 1rem;
     transition:.5s;
     background-color: #D3D3D3;
     border-radius: 10px;
+    border: 1px solid #9879D9;
   }
 
 article.post:hover {
     box-shadow: 0 12px 8px rgba(0,0,0,.4);
-    padding:10px;
     transition: .5s;
     background-color: #F8F8F8;
 }
@@ -395,7 +401,7 @@ article.post figure {
 
 figcaption{
     text-transform:uppercase;
-    color: #20627d;
+    color: #151859;
     font-size: .8rem;
 }
 
@@ -420,7 +426,6 @@ article.post a:hover{
     max-width: 800px;
     width:80vw;
     margin: 40px auto;
-
 }
 
 div.see-more {
@@ -434,9 +439,8 @@ div.see-more {
 .slick-prev .slick-prev-icon, .slick-next .slick-next-icon,
 .slick-dots li button .slick-dot-icon,
 .slick-dots li.slick-active button .slick-dot-icon {
-  color: #090826;
+  color: #000;
   font-size: 2rem;
- 
 }
 
 /* Customize Previous/Next/Dots/Autoplay - Active State */
@@ -449,7 +453,7 @@ div.see-more {
 .slick-dots li.slick-active button:focus .slick-dot-icon,
 .slick-autoplay-toggle-button:focus 
 {
-    color:#9879D9;
+    color:#787878;
 }
 
 .slick-prev .slick-prev-icon:before {
@@ -577,7 +581,7 @@ Color Theme Swatches in Hex
 #0F1140; darkest blue
 
 Color Theme Swatches in RGBA
-rgba(151, 121, 216, 1); 
+rgba(151, 121, 216, .5); 
 rgba(60, 47, 140, 1);
 rgba(8, 7, 38, 1);
 rgba(20, 23, 89, 1);
