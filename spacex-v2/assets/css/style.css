@@ -84,7 +84,7 @@ body {
 
 h1,h2,h3 {
     font-family: 'MuseoModerno', sans-serif;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 a:hover {
@@ -249,12 +249,55 @@ header.primary nav a:active
 
 #content h2.main {
     font-size: 1.9rem;
+    line-height: 2.2rem;
 }
 
 #content iframe {
     width: 100%;
 }
 
+.countdown-container {
+    display: flex;
+    margin: 0 auto;
+    padding: 2rem;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.1rem;;
+    background: url('../img/stars-bg.jpg') no-repeat center center / cover;
+    color: white;
+}
+
+.days-container,
+.hours-container,
+.minutes-container, 
+.seconds-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.1);
+    border: 5px solid rgba(255, 253, 253, 0.449);
+    width: 140px;
+    height: 140px;
+    border-radius: 99px;
+    }
+      
+.days,
+.hours,
+.minutes,
+.seconds {
+    font-size: 2.5em; 
+    margin: 10px 0;
+    }
+      
+.days-label,
+.hours-label,
+.minutes-label,
+.seconds-label {
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    }
+      
 #content details {
     padding: 40px 0px;
     border-bottom: 1px solid;
@@ -264,7 +307,7 @@ header.primary nav a:active
     font-family: 'MuseoModerno', sans-serif;
     font-size: 1.2rem;
     color: #0F1140;
-    font-weight:900
+    font-weight:900;
 }
 
 #content table {
@@ -299,6 +342,7 @@ header.primary nav a:active
 
 #articles {
     background-color: #090826;
+    margin-top: 2rem;
 }
 
 section#articles .container{
@@ -505,6 +549,23 @@ footer#colophon a.cta {
       margin-bottom: 2em;
     }
   }
+
+  @media (max-width: 800px) {
+  
+    .countdown-container {
+      max-width: 90%;
+    }
+    
+    .days-container,
+    .hours-container,
+    .minutes-container, 
+    .seconds-container {
+      font-size: 0.8em;
+      width: 100px;
+      height: 100px;
+    }
+  }
+  
 
 
 /*------galactic color scheme from adobe color
