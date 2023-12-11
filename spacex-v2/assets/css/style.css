@@ -239,13 +239,26 @@ section#articles .container{
     color: #fff;
 }
 
+#articles h2 a {
+    text-decoration: none;
+}
+
+#articles h2 a:hover {
+
+}
+
+#articles p.subtitle {
+    font-size: .9rem;;
+    margin-top: -10px;
+}
+
 article.post{
     width: 30%;
     box-shadow: 4px 4px 15px rgba(14, 17, 63, 1);   
     padding:10px;
     font-size: 1.1rem;
     transition:.5s;
-    background-color: #fbfbfbad;
+    background-color: #D3D3D3;
     border-radius: 10px;
   }
 
@@ -253,7 +266,7 @@ article.post:hover {
     box-shadow: 0 12px 8px rgba(0,0,0,.4);
     padding:10px;
     transition: .5s;
-    background-color: #fbfbfbea;
+    background-color: #F8F8F8;
 }
 
 article.post figure {
