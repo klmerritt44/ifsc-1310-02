@@ -62,9 +62,12 @@ const countDownClock = (number = 100, format = 'seconds') => {
   }
 }
 
+const launchDate = new Date("February 12, 2024 4:30:00 PM");
+const differenceMilliseconds = launchDate - Date.now();
+const differenceSeconds = differenceMilliseconds / 1000;
 /*
   start countdown
   enter number and format
   days, hours, minutes or seconds
 */
-countDownClock(60, 'days');
+countDownClock(differenceSeconds, 'seconds');
