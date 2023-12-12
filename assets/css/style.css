@@ -31,9 +31,10 @@ body{
 
   /* --------utility styles-------- */
 
-.container{
+#content.container{
     width:80vw;
     margin:40px auto;
+    padding: 3em 10em;
 }
 
 .img-right{
@@ -76,6 +77,8 @@ h2 {
     font-size: 1.8rem;
     text-align:left;
     font-weight: normal;
+    margin-top: 25px;
+    margin-bottom: 0px;
 }
 
 header.primary{
@@ -111,6 +114,5 @@ header.primary nav a {
 
 #content {
    background-color: #fff;
-   padding: 30px 60px 60px 60px;
    line-height: 1.5;
 }
